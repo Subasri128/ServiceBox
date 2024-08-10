@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="ServiceBox.TestComponents.listeners"/>
+  </listeners>
+  <test parallel="tests" name="validationMessageScenariostest(failed)" preserve-order="true">
+    <classes>
+      <class name="ServiceBox.TestComponents.completeExecution1">
+        <methods>
+          <include name="launchingApplication"/>
+        </methods>
+      </class> <!-- ServiceBox.TestComponents.completeExecution1 -->
+      <class name="ServiceBox.TestComponents.validationMessageScenarios">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="lisencePlateMessageValidation"/>
+          <include name="launchingApplication"/>
+        </methods>
+      </class> <!-- ServiceBox.TestComponents.validationMessageScenarios -->
+    </classes>
+  </test> <!-- validationMessageScenariostest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
